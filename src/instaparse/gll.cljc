@@ -434,7 +434,8 @@
     (success tramp node-key 
              (build-node-with-meta
                (:node-builder tramp) :instaparse/failure
-               (sub-sequence (:text tramp) index)
+               ;(sub-sequence (:text tramp) index)
+               (node-key 1)
                index (count (:text tramp)))
              (count (:text tramp)))))
 
